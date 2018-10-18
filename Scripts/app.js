@@ -106,32 +106,22 @@ function getShoppingListById(id) {
     drawItems();
 }
 
-function getItems(name) {
-    var data = new Array();
+function returnSupplierItems(name) {
+    currentList.name = name + " Products";
+    currentList.supplierEmail = "supplierEmail@gmail.com";
 
     $.ajax({
         type: "GET",
         url: "supplierItems/" + name + ".json",
         dataType: "text",
-        async: false,
-        success: function (response) {
-            var json = $.parseJSON(response);
-            data = json;
-        }
+    }).done(function(response) {
+        var json = $.parseJSON(response);
+        currentList.items = json;
+        
+        showShoppingList();
+        showSupplierInfo();
+        drawItems();
     });
-
-    return data;
-}
-
-function returnSupplierItems(name) {
-    currentList.name = name + " Products";
-    currentList.supplierEmail = "supplierEmail@gmail.com";
-
-    currentList.items = getItems(name);
-
-    showShoppingList();
-    showSupplierInfo();
-    drawItems();
 }
 
 function submitOrder() {

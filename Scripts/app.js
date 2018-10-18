@@ -114,13 +114,14 @@ function returnSupplierItems(name) {
         type: "GET",
         url: "supplierItems/" + name + ".json",
         dataType: "text",
-    }).done(function(response) {
-        var json = $.parseJSON(response);
-        currentList.items = json;
-        
-        showShoppingList();
-        showSupplierInfo();
-        drawItems();
+        success: function (response) {
+            var json = $.parseJSON(response);
+            currentList.items = json;
+
+            showShoppingList();
+            showSupplierInfo();
+            drawItems();
+        }
     });
 }
 

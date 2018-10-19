@@ -24,8 +24,9 @@ width: 150px;
 
 ul {
     list-style-type: none;
-    max-width: 400px;
+    max-width: 480px;
     margin: 20px auto;
+    padding-inline-start: 0px;
 }
 
 button {

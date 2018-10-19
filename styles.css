@@ -26,7 +26,7 @@ ul {
     list-style-type: none;
     max-width: 480px;
     margin: 20px auto;
-    padding-inline-start: 0px;
+    padding-inline-start: 0px !important;
 }
 
 button {
@@ -51,7 +51,6 @@ li {
     li input[type="text"] {
         width: 30px;
         text-align: center;
-	background-color: red;
     }
 
     .item {

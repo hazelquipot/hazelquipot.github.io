@@ -22,6 +22,16 @@
   }
 }
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+	.body, .main, .right {
+        width:100%;
+	font-color: black;
+  }
+}
+
 ul {
     list-style-type: none;
     max-width: 480px;

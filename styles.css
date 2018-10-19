@@ -3,10 +3,16 @@
     font-family: Arial;
     color: white;
     text-align: center;
-    /*background-image: url('Images/food-art-picture-For-Desktop-Wallpaper.jpg');
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    background-attachment: fixed;*/
+}
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
 }
 
 .center{
@@ -19,16 +25,6 @@
   /* For mobile phones: */
   .body, .main, .right {
     width:100%;
-  }
-}
-
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) {
-	.body, .main, .right {
-        width:100%;
-	font-color: black;
   }
 }
 

@@ -10,7 +10,7 @@
 }
 
 .center{
-width: 150px;
+  width: 150px;
   margin: 40px auto;
   
 }
@@ -51,6 +51,7 @@ li {
     li input[type="text"] {
         width: 30px;
         text-align: center;
+	background-color: red;
     }
 
     .item {

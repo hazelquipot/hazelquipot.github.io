@@ -113,7 +113,7 @@ function returnSupplierItems(name) {
     $.ajax({
         type: "GET",
         url: "supplierItems/" + name + ".json",
-        dataType: "text",
+        dataType: "json",
         success: function (response) {
             var json = $.parseJSON(response);
             currentList.items = json;

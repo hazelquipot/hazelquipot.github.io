@@ -5,12 +5,19 @@
     text-align: center;
 }
 
+body{
+    font-family:Tahoma, Geneva, sans-serif;
+    background-color: #313131;
+    font-size:14px;
+    color: white;
+    text-align: center;
+}
+
 textarea,
 input.text,
 input[type="text"],
 input[type="button"],
 input[type="submit"],
-button,
 .input-checkbox {
 -webkit-appearance: none;
 border-radius: 0;
@@ -37,7 +44,8 @@ ul {
 }
 
 button {
-    
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .btnAdd {
